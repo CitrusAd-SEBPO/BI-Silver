@@ -215,8 +215,9 @@ p.citrusBi__disclaimer {
 }
 
 /* Shop FRONTLINE® Shield for Dogs */
-.citrusBi__frontlineShieldShopContainer {
-  width: 85%;
+.citrusBi__frontlineShieldCarousal {
+  max-width: 1273px;
+  width: 100%;
   margin: 70px auto;
 }
 .citrusBi__frontlineShopDogCardImg {
@@ -237,7 +238,7 @@ p.citrusBi__disclaimer {
   font-size: 13px;
   color: #333333;
   min-height: 70px;
-  padding-right: 30px;
+  padding-right: 5px;
 }
 .citrusBi__cardCta a {
   font-family: "PetcoCircularTT-Bold", arial !important;
@@ -323,9 +324,28 @@ p.citrusBi__disclaimer {
 }
 
 /*----------------------------------- responsive styling------------------------------------- */
+@media all and (min-width: 2150px) {
+  .citrusBi__PovBanner img {
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .citrusBi__PovTextContainer-fluid {
+    width: 729px;
+    height: 729px;
+    margin: 0 auto;
+    background-color: #989c9d;
+    border-radius: 50%;
+    position: absolute;
+    top: -4%;
+    left: calc(100% / 2 - 15%);
+  }
+}
 @media all and (min-width: 1441px) {
   .citrusBi__PovTextContainer {
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
