@@ -1,0 +1,295 @@
+/*-----------------------------------*/
+/*------------ Splide Css-----------*/
+/*-----------------------------------*/
+.splide__list {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.splide.is-initialized:not(.is-active) .splide__list {
+  display: block;
+}
+
+.splide {
+  outline: none;
+  position: relative;
+  visibility: hidden;
+}
+
+.splide.is-initialized,
+.splide.is-rendered {
+  visibility: visible;
+}
+
+.splide__slide {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  list-style-type: none !important;
+  margin: 0;
+  outline: none;
+  position: relative;
+}
+
+.splide__slide img {
+  vertical-align: bottom;
+}
+
+.splide__track {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.splide--draggable > .splide__track {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.splide--fade > .splide__track > .splide__list {
+  display: block;
+}
+
+.splide--fade > .splide__track > .splide__list > .splide__slide {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.splide--fade > .splide__track > .splide__list > .splide__slide.is-active {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.splide--rtl {
+  direction: rtl;
+}
+
+.splide--ttb.is-active > .splide__track > .splide__list {
+  display: block;
+}
+
+.splide__arrow {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: #ccc;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  height: 2em;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 0.7;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 2em;
+  z-index: 1;
+}
+
+.splide__arrow svg {
+  fill: #000;
+  height: 1.2em;
+  width: 1.2em;
+}
+
+.splide__arrow:hover {
+  opacity: 0.9;
+}
+
+.splide__arrow:focus {
+  outline: none;
+}
+
+.splide__arrow--prev {
+  left: 1em;
+}
+
+.splide__arrow--prev svg {
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.splide__arrow--next {
+  right: 1em;
+}
+
+/**************************************/
+/************ tab Area*************/
+/************************************/
+
+.citrusBi__shopFrontlineTabContainer {
+  max-width: 1273px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/***** best seller section ****/
+.citrusBifilterProductDiv.citrusTabshow {
+  display: block;
+}
+
+.citrusBifilterProductDiv {
+  float: left;
+  display: none;
+}
+
+.citrusBi__shopTabItem span {
+  display: block;
+}
+
+.citrusBi__shopTabItem {
+  text-transform: uppercase;
+  padding: 12px 20px;
+  margin: 0px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  color: #6e6b6b;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+button {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+}
+
+.citrusBi__shopTabItem.citrusBi__shopTabItem_active {
+  color: #001952;
+  border-bottom: 8px solid #001952;
+  margin-top: 12px;
+}
+
+.citrusBi__shopTab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #021b4e;
+}
+
+.citrusBi__shopProduct__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.citruscitrusBi__shopProduct__col {
+  max-width: 195px;
+  width: 100% !important;
+  margin: 0px 9px;
+}
+
+.citrusBi_shopProduct__card__img {
+  padding: 0 15px;
+}
+
+.citrusBi_shopProduct__card__img > a img {
+  width: 100%;
+  height: auto;
+}
+
+.citruscitrusBi__shopProduct__col.citrus_row_opacity_0 {
+  opacity: 0;
+}
+
+.citruscitrusBi__shopProduct__row .splide__pagination {
+  display: none;
+}
+
+.citrusBi_shopProduct__card__body > p {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 13px;
+  font-weight: 100;
+  padding-right: 5px;
+}
+
+.citrusBi_shopProduct__card > a {
+  color: #001952;
+  font-size: 16px;
+  display: block;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  text-decoration: underline;
+}
+
+.citrusBi__shopProduct__tabs .splide__arrow--next {
+  right: 0px;
+}
+
+.citrusBi__shopProduct__tabs .splide__arrow--prev {
+  left: 2px;
+}
+
+.citrusBi__shopProduct__tabs .splide__arrow svg {
+  fill: #122359;
+}
+
+.citrusBi__shopProduct__tabs .splide__arrow {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #122359;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  height: 3.2em;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 1;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 3.2em;
+  z-index: 1;
+}
+.citruscitrusBi__shopProduct__row_hide_arrow .splide__arrows {
+  display: none;
+}
