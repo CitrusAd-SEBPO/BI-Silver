@@ -316,10 +316,10 @@ p.citrusBi__disclaimer {
   line-height: 20px;
 }
 /* common styling */
-.desktop__hide {
+.citrusBi_desktop__hide {
   display: none;
 }
-.mobile__hide {
+.citrusBi_mobile__hide {
   display: block;
 }
 
@@ -418,10 +418,10 @@ p.citrusBi__disclaimer {
 }
 @media all and (max-width: 768px) {
   /* common styling */
-  .desktop__hide {
+  .citrusBi_desktop__hide {
     display: block;
   }
-  .mobile__hide {
+  .citrusBi_mobile__hide {
     display: none;
   }
   /* hero / pov */
