@@ -1,46 +1,50 @@
 // tab product
-var splides = document.querySelectorAll(".citrusBi__shopProduct__tabs");
-if (splides.length) {
-  for (var i = 0; i < splides.length; i++) {
-    var splideElement = splides[i];
-    var splideDefaultOptions = {
-      rewind: true,
-      type: "slide",
-      autoplay: false,
-      rewindSpeed: 500,
-      speed: 500,
-      pauseOnHover: true,
-      perPage: 6,
-      perMove: 2,
-      width: "100%",
-      breakpoints: {
-        375: {
-          perPage: 1,
+document.addEventListener("DOMContentLoaded", function () {
+  var splides = document.querySelectorAll(".citrusBi__shopProduct__tabs");
+  if (splides.length) {
+    for (var i = 0; i < splides.length; i++) {
+      var splideElement = splides[i];
+      var splideDefaultOptions = {
+        rewind: true,
+        type: "slide",
+        autoplay: false,
+        rewindSpeed: 500,
+        speed: 500,
+        pauseOnHover: true,
+        perPage: 6,
+        perMove: 2,
+        width: "100%",
+        breakpoints: {
+          375: {
+            perPage: 1,
+          },
+          576: {
+            perPage: 2,
+          },
+          991: {
+            perPage: 3,
+          },
+          992: {
+            perPage: 3,
+          },
+          1024: {
+            perPage: 6,
+          },
+          1200: {
+            perPage: 6,
+          },
         },
-        576: {
-          perPage: 2,
-        },
-        991: {
-          perPage: 3,
-        },
-        992: {
-          perPage: 3,
-        },
-        1024: {
-          perPage: 6,
-        },
-        1200: {
-          perPage: 6,
-        },
-      },
-    };
+      };
 
-    new Splide(splideElement, splideDefaultOptions).mount();
+      new Splide(splideElement, splideDefaultOptions).mount();
+    }
   }
-}
+});
 
 //for tab switcher
-filterProduct("citrusBi_forDogs");
+document.addEventListener("DOMContentLoaded", function () {
+  filterProduct("citrusBi_forDogs");
+});
 
 function filterProduct(c) {
   var x, i;
